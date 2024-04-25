@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Rubik", sans-serif;
+}
+body{
+    max-height: 100vh;
+}
+button{
+    font-family: "Rubik", sans-serif;
+}
+.sideBar{
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 0;
+    background-color: hsl(229, 31%, 21%);
+    overflow: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.sideBar-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.sideBar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color:hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    display: block;
+    font-size: 25px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 1rem;
+    border-top: 1px solid white;
+}
+.sideBar a:hover{
+    color: hsl(5, 85%, 63%);
+}
+.sideBar .closebtn{
+    width: 10%;
+    margin: 10px;
+    cursor: pointer;}
+.sideBar-btn{
+    border-top: 1px solid white;
+    padding-top: 1rem;
+margin-bottom: 2rem;
+}
+.sideBar button{
+    width: 90%;
+    height: 35px;
+    text-transform: uppercase;
+    background-color: inherit;
+    color: white;
+    border: 3px solid white;
+}
+.sideBar .sideBar-socials{
+    display: flex;
+    gap: 10px;
+    margin: auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 2rem;
+}
+.links-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(229, 31%, 21%);
+    font-size: 14px;
+    transition: 0.3s;
+}
+header a:hover{
+    color: hsl(0, 94%, 66%);
+}
+.header-links{
+  display: flex;
+  gap: 10px;
+}
+header button{
+ background-color: hsl(0, 94%, 66%);
+ padding: 5px;
+ text-transform: uppercase;
+ text-align: center;
+ border: none;
+ border-radius: 4px;
+ color: white;
+ margin-left: 1rem;
+ font-size: 14px;
+ width: 100px;
+ box-shadow: 2px 2px 1px hsl(0, 94%, 66%);
+ cursor: pointer;
+}
+header button:hover{
+    color: hsl(0, 94%, 66%);
+    background-color: white;
+    border: 1px solid hsl(0, 94%, 66%);
+}
+#menu{
+    display: none;
+}
+.first-section{
+    padding: 0.8rem 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.first-section-text{
+    width: 50%;
+    margin-top: 3rem;
+}
+.first-section h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.first-section p{
+    width: 60%;
+    line-height: 20px;
+    color: hsl(229, 8%, 60%);
+    margin-bottom: 1rem;
+}
+.first-section article{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.first-section button{
+    height: 30px;
+    width: 120px;
+    padding: 3px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.purple-btn{
+    background-color: hsl(231, 69%, 60%);
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    padding: 3px;
+    width: 150px;
+    color: white;
+    box-shadow: 2px 2px 1px hsl(231, 69%, 60%);
+    transition: 0.3s;
+}
+.purple-btn:hover{
+    background-color: white;
+    border: 1px solid hsl(231, 69%, 60%);
+    color: hsl(231, 69%, 60%);
+}
+.grey-btn{
+    background-color: hsl(229, 8%, 67%);
+    color: hsl(229, 31%, 21%);
+    box-shadow: 2px 2px 1px hsl(229, 8%, 67%);
+    transition: 0.3s;
+}
+.grey-btn:hover{
+    background-color: white;
+    color: hsl(229, 31%, 21%);
+    border: 1px solid hsl(229, 31%, 21%);
+}
+.first-section img{
+    width: 100%;
+}
+.second-section{
+    padding: 0.8rem 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.second-section h3{
+   color: hsl(229, 31%, 21%);
+   font-size: 1.4rem;
+   margin-bottom: 0.8rem;
+}
+.second-section p{
+    width: 400px;
+    margin: auto;
+    color: hsl(229, 8%, 60%);
+}
+.third-section{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 2rem;
+    margin: auto;
+    gap: 19px;
+    margin-bottom: 2rem;
+}
+.third-section button{
+    background-color: inherit;
+    border: none;
+}
+.third-section a{
+    text-decoration: none;
+    color: hsl(229, 8%, 60%);
+    border-bottom: 1px solid grey;
+}
+.third-section a:hover{
+    color: #f15e50;
+}
+.fourth-section{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0.8rem 2rem;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.fourth-section-text{
+    width: 50%;
+    margin-top: 3rem;
+}
+.fourth-section h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.fourth-section p{
+    width: 60%;
+    line-height: 20px;
+    color: hsl(229, 8%, 60%);
+    margin-bottom: 1rem;
+}
+.fourth-section article{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.fourth-section button{
+    height: 30px;
+    width: 120px;
+    padding: 3px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.fourth-section img{
+    width: 100%;
+}
+#share, #search{
+    display: none;
+}
+.grid-section{
+    background-color: hsl(0, 0%, 98%);
+    padding: 2rem 3rem ;
+    text-align: center;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.grid-section div{
+    padding: 1rem;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0.3px 0.3px 3px hsl(231, 69%, 90%);
+    border-radius: 10px;
+    gap: 15px;
+    width: 200px;
+    height: 250px;
+}
+.grid-section .purple-btn{
+    margin: auto;
+    width: 100%;
+}
+.dots{
+    width: 55%;
+    margin: 1rem auto;
+}
+.grid-fox{
+    margin-top: 2rem;
+}
+.grid-opera{
+margin-top: 4rem;}
+.faq-section{
+    margin: 2rem 20%;
+}
+.questions{
+    background: inherit;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    position: relative;
+}
+.questions:hover{
+    color: #f15e50;
+}
+.qa{
+  border-top: 1px solid black;
+}
+.btn-img img{
+    cursor: pointer;
+}
+.up{
+    width: 20px;
+    display: none;
+}
+.answers{
+    font-size: 14px;
+    width:100%;
+    margin:0.8rem auto;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.3 ease;
+    color: hsl(229, 8%, 67%);
+}
+.last-section{
+    padding: 0.8rem 2rem;
+    color: white;
+    margin: 0;
+    background-color: hsl(231, 69%, 60%);
+    text-align: center;
+}
+.last-section h6{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 1.5rem auto;
+}
+.last-section h1{
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.form{
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+}
+.form input, button{
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+}
+.form input.error{
+        background-image: url('icon-error.svg');
+        background-repeat: no-repeat;
+        background-position: right 5px center;
+        border: 2px solid hsl(0, 94%, 66%);
+}
+.errors{
+    text-align: start;
+    margin-top:-5px;
+    font-size: 12px;
+    padding: 4px;
+    background-color: hsl(0, 94%, 66%);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    width: 200px;
+    display: none;
+    font-style: italic;
+}
+.form button{
+    background-color: hsl(0, 94%, 66%);
+ text-align: center;
+ margin-top: -1.5px;
+ border: none;
+ border-radius: 4px;
+ color: white;
+ margin-left: 1rem;
+ font-size: 14px;
+ box-shadow: 2px 2px 1px hsl(0, 94%, 66%);
+ cursor: pointer;
+}
+.form button:hover{
+    color: hsl(0, 94%, 66%);
+    background-color: white;
+    border: 1px solid hsl(0, 94%, 66%);
+}
+
+footer{
+    padding: 1rem 2rem;
+    background-color: hsl(229, 31%, 21%);
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+footer a:hover{
+    color: hsl(0, 94%, 66%);
+}
+.footer-first{
+    display: flex;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-links{
+    display: flex;
+    gap: 5px;
+}
+.footer-socials{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+}
+.attribution { font-size: 11px; text-align: center; color: white; }
+    .attribution a { color: white; }
+
+
+    @media(max-width:850px){
+        .first-section{
+            flex-direction: column-reverse;
+        }
+        .first-section-text{
+            width: 100%;
+            text-align: center;
+        }
+        .first-section-text p, h1{
+            width: 100%;
+        }
+        .first-section article{
+            justify-content: center;
+            margin: auto;
+        }
+        .fourth-section{
+            flex-direction: column-reverse;
+        }
+        .fourth-section-text{
+            width: 100%;
+            text-align: center;
+        }
+        .fourth-section-text p, h1{
+            width: 100%;
+        }
+        .fourth-section article{
+            justify-content: center;
+            margin: auto;
+        }
+    }
+    @media(max-width:768px){
+        .links-btn{
+            display: none;
+        }
+        #menu{
+            display:block;
+        }
+        .first-section{
+            flex-direction: column-reverse;
+        }
+        .second-section p{
+            width: 100%;
+            margin: auto;
+        }
+        .third-section{
+            flex-direction: column;
+        }
+        .grid-section{
+            flex-direction: column;
+        }
+        .grid-section div{
+            width: 210px;
+            margin: auto;
+            margin-top: 1rem;
+        }
+        .faq-section{
+            margin:2rem 10% ;
+        }
+        .form{
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            margin: 1rem auto 2rem;
+        }
+        .form article{
+            margin: auto;
+        }
+        .form button{
+            margin: auto;
+        }
+        .footer-first{
+            flex-direction: column;
+            gap: 10px;
+        }
+        .footer{
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+        }
+        .footer-links{
+            flex-direction: column;
+            margin: 1rem auto;
+        }
+    }
